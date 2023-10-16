@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoAnThietBiDiDong"
+        tools:targetApi="31">
+        <activity
+            android:name=".BangLaiSuat1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LSGDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LichSuChuyenTienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LichSuNapTienActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ItemLsChuyenTienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemLsNapTienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoiHoChieuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoiNgayThangNamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoiSoDienThoaiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChuaDangNhapThongTinChungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChuaDangNhapCachThucTinhLaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChuaDangNhapHuongDanSuDungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChuaDangNhapGiaiThichThuatNguActivity"
+            android:exported="false" />
+        <!--
+  <activity
+            android:name=".GiaiThichThuatNguChuaDangNhapActivity"
+            android:exported="true" >
+
+        </activity>
+        -->
+        <activity
+            android:name=".QuenMatKhauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoiMatKhauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HuongDanSuDungActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThongBaoMoi1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongBaoMoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinChungActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThongBaoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LichSuGIaoDichActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChuyenTienActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThongTinCaNhanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".KhiChonKhongCamOnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BangLaiSuatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThongBaoThanhCongNapTienActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NapTien1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".NapTienActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThongBaoThanhCongTaiTucActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TKTKTaiTucActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MoTaiKhoanTietKiemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GiaiThichThuatNguActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChinhActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OpeningActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

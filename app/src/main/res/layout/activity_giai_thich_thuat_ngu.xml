@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GiaiThichThuatNguActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF2F2"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/header"
+                    android:padding="5dp"
+                    android:background="#FFF2F2"
+                    >
+                    <ImageButton
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/account12"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/baseline_arrow_back_32"
+                        android:background="#FFF2F2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu"
+                    app:layout_constraintTop_toBottomOf="@+id/header"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIẢI THÍCH THUẬT NGỮ"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:padding="10dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:id="@+id/giaithichthuatngu1"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu"
+                    >
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hinh_giaithichthuatngu"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu2"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu1"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:text="NHỮNG THUẬT NGỮ BẠN CẦN BIẾT KHI GỬI"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="S K Y"
+                        android:fontFamily="@font/font1"
+                        android:textColor="#910000"
+                        android:layout_marginRight="20dp"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu3"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu2"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font1"
+                        android:text="1) TIỀN GỐC: "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="Số tiền ban đầu bạn gửi tiết kiệm."
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/giaithichthuatngu4"
+                    android:layout_width="386dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu3"
+
+                    >
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font1"
+                        android:text="2) TIỀN LÃI DỰ KIẾN: "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="Là số tiền lãi tính đến ngày đáo hạn của tài khoản tiết kiệm."
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu5"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu4"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="3) CÁCH TÍNH TIỀN LÃI:  "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tiền lãi = tiền gốc x lãi suất (%/năm) x số ngày thực tế / 365."
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu6"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu5"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="4) NGÀY HIỆU LỰC:  "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text=" Ngày gửi tiết kiệm."
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu7"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu6"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="5) NGÀY ĐÁO HẠN (hay ngày hết hiệu lực):  "
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font1"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Là ngày cuối cùng của kỳ hạn bạn chọn. Ngân hàng sẽ trả cả gốc và lãi về tài khoản trong ngày này."
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu8"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu7"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="6) TẤT TOÁN:  "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Là hành động chấm dứt gửi tiết kiệm để nhận về cả gốc và lãi."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu9"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu8"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   +Tất toán tự động: "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngân hàng sẽ tự động đóng tài khoản tiết kiệm và trả cả gốc và lãi về tài khoản cho bạn vào ngày hết hiệu lực."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu10"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu9"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Tất toán trước hạn: "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bạn chủ động dứt việc gửi tiết kiệm trước ngày đáo hạn của tài khoản tiết kiệm. Việc này sẽ làm bạn mất đi phần lớn số tiền lãi được tính trên mức lãi suất có kỳ hạn tương ứng trong thời gian đã qua. Thay vào đó, bạn chỉ nhận được số tiền lãi dựa trên số ngày gửi tiết kiệm thực tế và lãi suất không kỳ hạn của ngân hàng."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu11"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu10"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="7) HÌNH THỨC NHẬN LÃI:"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu12"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu11"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Cuối kỳ: "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngân hàng sẽ trả cả gốc và lãi về tài khoản vào ngày cuối cùng của kỳ hạn bạn chọn."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu13"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu12"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Đầu kỳ: "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngân hàng sẽ trả toàn bộ số lãi khi bạn gửi tiết kiệm. Tiền gốc sẽ được trả vào ngày hết hiệu lực của tài khoản tiết kiệm."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu14"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu13"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Hằng tháng:: "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngân hàng sẽ chia đều tiền lãi để trả cho bạn hằng tháng. Tiền gốc sẽ được trả vào ngày đáo hạn của tài khoản tiết kiệm."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu15"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu14"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="8) PHƯƠNG THỨC ĐÁO HẠN:"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Là cách thức lựa chọn việc thực hiện với gốc và lãi của tài khoản tiết kiệm vào ngày cuối cùng của kỳ hạn đã gửi."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu16"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu15"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Không tái tục: "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Số tiền gốc và lãi sẽ không tự động gửi tiếp qua kỳ hạn mới khi đến ngày đáo hạn. Bạn sẽ nhận cả gốc lẫn lãi được chỉ trả bởi ngân hàng về tài khoản trong ngày đáo hạn"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu17"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu16"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Tái tục tự động: "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Vào ngày hết hiệu lực của tài khoản tiết kiệm, tiền lãi sẽ được nhập chung vào gốc, sau đó sẽ gửi tiếp một kỳ hạn tương đương kỳ hạn vừa qua. Việc tái tục tự động này sẽ chấm dứt khi bạn chủ động tất toán tài khoản tiết kiệm."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu18"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu17"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="   + Chỉ tái tục gốc: "
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Bạn chủ động chọn chỉ gửi tiếp kỳ hạn mới tương đương với kỳ hạn đã qua với số tiền gốc."
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksand_regular"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu19"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu18"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="    "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="                                                      "
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/giaithichthuatngu20"
+                    app:layout_constraintTop_toBottomOf="@+id/giaithichthuatngu19"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="    "
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="                                                      "
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

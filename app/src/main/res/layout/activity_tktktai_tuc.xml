@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2F2"
+    tools:context=".TKTKTaiTucActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF2F2"
+        android:id="@+id/background1"
+        >
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:id="@+id/account12"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/baseline_arrow_back_32"
+            android:background="#FFF2F2"
+            />
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt TKTK tái tục"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/font1"
+            android:layout_marginLeft="33dp"
+            android:textSize="25sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:backgroundTint="#FFF2F2"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        app:layout_constraintRight_toRightOf="@+id/background1"
+        app:layout_constraintLeft_toLeftOf="@+id/background1"
+        android:layout_margin="25dp"
+        android:id="@+id/background2"
+        android:background="@drawable/custom_background2"
+        app:layout_constraintTop_toBottomOf="@+id/background1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="TKTK sẽ tự động tái tục toàn bộ tiền gốc và lãi vào cuối kỳ để gửi sang một kỳ hạn mới tương tự"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvList"
+        app:layout_constrainedHeight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@+id/background2"
+        app:layout_constraintRight_toRightOf="@+id/background2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/background4"
+        app:layout_constraintTop_toBottomOf="@+id/rvList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/rvList"
+        app:layout_constraintRight_toRightOf="@+id/rvList"
+        android:gravity="center"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="27dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/khongcamon"
+            android:text="KHÔNG ,CẢM ƠN"
+            android:fontFamily="@font/font1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taituc"
+            android:text="TÁI TỤC"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/font1"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

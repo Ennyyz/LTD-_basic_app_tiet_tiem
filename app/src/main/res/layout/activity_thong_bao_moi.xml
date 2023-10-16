@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2F2"
+    tools:context=".ThongBaoMoiActivity">
+
+    <LinearLayout
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF2F2">
+
+        <ImageButton
+            android:id="@+id/account12"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="9dp"
+            android:background="#FFF2F2"
+            android:src="@drawable/baseline_arrow_back_32" />
+
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="9dp"
+            android:text="Thông Báo"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/font1"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/search_view_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background1"
+        app:queryHint="Tìm kiếm"
+        android:fontFamily="@font/font1"
+        app:iconifiedByDefault="false"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="900dp"
+        android:layout_margin="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.582" />
+    <!--
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/background4"
+        app:layout_constraintTop_toBottomOf="@+id/background3"
+        />
+
+-->
+
+    <!--<LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_background"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnn1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#FAD4D4"
+            android:drawableTop="@drawable/home" />
+
+        <Button
+            android:id="@+id/btnn2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#FAD4D4"
+            android:drawableTop="@drawable/creditcard" />
+
+        <Button
+            android:id="@+id/btnn3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#FAD4D4"
+            android:drawableTop="@drawable/linechart" />
+
+        <Button
+            android:id="@+id/btnn4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#FAD4D4"
+            android:drawableTop="@drawable/user" />
+    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

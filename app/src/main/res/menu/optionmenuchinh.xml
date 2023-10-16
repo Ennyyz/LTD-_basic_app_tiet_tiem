@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/account" android:title="Account" android:icon="@drawable/account20" app:showAsAction="always" android:tooltipText="account" />
+    <item android:id="@+id/login"  android:title="Đăng nhập"  app:showAsAction="always" android:tooltipText="login"  />
+    <item  android:title="Item" app:showAsAction="always" android:icon="@drawable/arrow1"/>
+    <item android:title="Item" app:showAsAction="always" android:icon="@drawable/arrow1"/>
+    <item android:title="Item" app:showAsAction="always" android:icon="@drawable/arrow1"/>
+    <item android:title="Item" app:showAsAction="always" android:icon="@drawable/arrow1"/>
+    <item android:id="@+id/bell" android:title="Chuong" app:showAsAction="always" android:icon="@drawable/notifications" />
+    <item android:title="Item" app:showAsAction="always" android:icon="@drawable/arrow1"/>
+    <item  android:title="Item" app:showAsAction="always" android:icon="@drawable/arrow1"/>
+</menu>

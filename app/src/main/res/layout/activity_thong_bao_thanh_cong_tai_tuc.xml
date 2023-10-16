@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2F2"
+    tools:context=".ThongBaoThanhCongTaiTucActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF2F2"
+        android:id="@+id/background1"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Mở tài khoản tiết kiệm"
+            android:fontFamily="@font/font1"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/background2"
+        app:layout_constraintTop_toBottomOf="@+id/background1"
+app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Chúc mừng bạn mở tài khoản thành công !"
+            android:textColor="@color/black"
+            android:textSize="29sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/background2"
+        android:gravity="center"
+        android:layout_margin="110dp"
+        >
+        <Button
+            android:layout_width="243dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#049F55"
+            android:text="TIẾP TỤC"
+            android:id="@+id/tieptucmotktk"
+            android:textSize="20sp"
+            android:fontFamily="@font/font1"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
